@@ -280,3 +280,61 @@ footer .col-md-6 a {
 footer .col-md-6 a:hover {
 	color: var(--Cultured);
 }
+
+/* Media */
+@media screen and (max-width: 768px) {
+	#Intro .intro .photo-middle {
+		display: inline-block;
+		border-radius: 4px;
+	}
+
+	#Intro .photo {
+		padding: 0;
+	}
+
+	#Intro .photo img {
+		display: none;
+	}
+
+	#Thanks .w-50 {
+		width: 100% !important;
+	}
+
+	#Thanks p {
+		text-align: center !important;
+		padding-left: 0;
+	}
+}
+
+@media screen and (max-width: 576px){
+	#Intro .intro .photo-middle {
+		width: 40%;
+	}
+
+	#Intro br {
+		display: none;
+	}
+
+	#Intro .hello, #Intro .name {
+		padding-left: 8.33%;
+	}
+
+	#Intro p, #Intro .scroll-text {
+		padding-left: 20%;
+	}
+
+	#Mouse span {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 420px) {
+	#PortfolioContent {
+		height: auto !important;
+		overflow: none !important;
+	}
+
+	#PortfolioContent .work {
+		width: 100%;
+	}
+}
