@@ -1,0 +1,282 @@
+/* Colors */
+:root {
+	--White: #FFFFFF;
+	--Black: #000000;
+	--Raisin-Black: #1F2024;
+	--Jet: #333333;
+	--Cultured: #F8F8F8;
+	--Light-Gray: #D6D6D6;
+	--Sonic-Silver: #77787D;
+	--Maize-Crayola: #FFCD6A;
+}
+
+/* Global */
+* {
+	box-sizing: border-box;
+	position: relative;
+	font-family: "Nunito", "Microsoft JhengHei";
+	/* border: 1px solid #000; */
+}
+
+html, body {
+	margin: 0; padding: 0;
+}
+
+/* Section */
+section {
+	padding: 50px 0;
+}
+
+section .page-title {
+	display: inline-block;
+	left: 50%;
+	transform: translateX(-50%);
+	letter-spacing: 2px;
+	color: var(--Maize-Crayola);
+	padding: 0 1rem;
+	padding-bottom: 0.5rem;
+	margin-bottom: 1.5rem;
+	border-bottom: 2px solid var(--Maize-Crayola);
+}
+
+/* Navbar */
+.navbar {
+	transition: all .5s;
+}
+
+.navbar .navbar-brand {
+	letter-spacing: 1px;
+	color: var(--Maize-Crayola) !important;
+}
+
+.navbar .nav-link {
+	letter-spacing: 3px;
+	color: var(--Light-Gray);
+}
+
+/* Intro */
+#Intro {
+	background-color: var(--Raisin-Black);
+}
+
+#Intro img {
+	width: 60%;
+	min-width: 150px;
+}
+
+#Intro .intro {
+	color: var(--White);
+	padding: 100px 10px;
+}
+
+#Intro .intro .photo-middle {
+	display: none;
+	margin: 1rem auto;
+	left: 50%;
+	transform: translateX(-50%);
+	min-width: 150px;
+}
+
+#Intro .intro .hello,
+#Intro .intro .name,
+#Intro .intro p,
+#Intro .intro .scroll-text {
+	/* border-right: 2px solid var(--Light-Gray);
+	white-space: nowrap;
+	overflow: hidden; */
+}
+
+#Intro .intro .name {
+	color: var(--Maize-Crayola);
+}
+
+#Intro .intro span {
+	letter-spacing: .5px;
+}
+
+#Intro .col-md-1 a {
+	position: absolute;
+	bottom: 0;
+	color: var(--Cultured);
+}
+
+#Intro .col-md-1 i {
+	font-size: 1.2rem;
+}
+
+#Intro .mouse {
+	cursor: pointer;
+	user-select: none;
+	font-size: 8px;
+	letter-spacing: 0.5px;
+}
+
+#Intro .mouse-icon {
+	width: 24px; height: 24px;
+}
+
+#Intro .mouse-icon path {
+	fill: var(--White);
+}
+
+#Intro .photo {
+	padding: 60px 0;
+}
+
+#Intro .photo img {
+	border-radius: 4px;
+}
+
+/* About */
+#About {
+	background-color: #282833;
+}
+
+#About .about {
+	letter-spacing: 0.5px;
+	color: var(--Light-Gray);
+}
+
+#About .btn {
+	background-color: var(--Maize-Crayola);
+	color: var(--Jet);
+}
+
+/* Portfolio */
+#Portfolio {
+	background-color: var(--Cultured);
+}
+
+#Portfolio .page-title {
+	color: var(--Raisin-Black);
+	border-color: var(--Raisin-Black);
+}
+
+#Portfolio ul li .nav-link {
+	color: var(--Sonic-Silver);
+	padding: 0.1rem 1rem;
+	transition: all .5s;
+}
+
+#Portfolio ul li .nav-link:hover {
+	color: var(--Jet);
+	font-weight: bolder;
+}
+
+#Portfolio ul li .nav-link.active {
+	background-color: transparent !important;
+	border-bottom: 2px solid var(--Jet);
+	font-weight: bolder;
+	border-radius: 0;
+	color: var(--Jet);
+}
+
+#Portfolio .tab-content {
+	height: 300px;
+	min-height: 300px;
+	overflow: hidden;
+}
+
+#Portfolio .tab-content .work {
+	cursor: pointer;
+}
+
+#Portfolio .tab-content .work::before {
+	content: "";
+	z-index: 3;
+	display: inline-block;
+	width: calc(100% - 1rem); height: 100%;
+	position: absolute;
+	top: 0; left: 0.5rem;
+	background-color: rgba(0, 0, 0, .6);
+}
+
+#Portfolio .tab-content .work::before,
+#Portfolio .tab-content .work .title,
+#Portfolio .tab-content .work i {
+	opacity: 0;
+}
+
+#Portfolio .tab-content .work:hover .title,
+#Portfolio .tab-content .work:hover i,
+#Portfolio .tab-content .work:hover::before {
+	opacity: 1;
+	transition: all .5s;
+}
+
+#Portfolio .tab-content .work a {
+	display: inline-block;
+	width: calc(100% - 1rem); height: 100%;
+	position: absolute;
+	top: 0; left: 0.5rem;
+	background-color: rgba(0, 0, 0, .6);
+	background-color: transparent;
+	z-index: 5;
+}
+
+#Portfolio .tab-content .work .title,
+#Portfolio .tab-content .work i {
+	position: absolute;
+	color: var(--Cultured);
+	z-index: 5;
+	transition: all 1s;
+}
+
+#Portfolio .tab-content .work .title {
+	font-weight: bold;
+	top: 0;
+	padding-top: 0.5rem; padding-left: 0.5rem;
+	letter-spacing: 1px;
+	width: 30%;
+}
+
+#Portfolio .tab-content .work i {
+	bottom: 0.5rem; right: 1rem;
+}
+
+#AndroidPanel .work img {
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+#AndroidPanel i {
+	top: 53%;
+}
+
+/* Thanks */
+#Thanks {
+	background-color: var(--Jet);
+	color: var(--Cultured);
+}
+
+#Thanks h1 {
+	font-size: 5rem;
+}
+
+#Thanks p {
+	padding-left: 6rem;
+}
+
+#Thanks p.text-center {
+	padding-left: 0;
+	font-weight: bold;
+	color: var(--Maize-Crayola);
+}
+
+/* Footer */
+footer {
+	background-color: var(--Raisin-Black);
+	color: var(--Sonic-Silver);
+}
+
+footer .fw-bolder {
+	letter-spacing: 2px;
+}
+
+footer .col-md-6 a {
+	color: var(--Sonic-Silver);
+}
+
+footer .col-md-6 a:hover {
+	color: var(--Cultured);
+}

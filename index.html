@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Portfolio</title>
+	<!-- Google fonts: Ninuto -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&amp;display=swap">
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="css/Bootstrap/5.1.3/bootstrap.min.css">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="css/Fontawesome/V6/all.min.css">
+	<!-- index -->
+	<link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<!-- Navbar -->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+		<div class="container-fluid">
+			<a href="" class="navbar-brand fw-bolder">
+				Wei's Portfolio
+			</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#NavbarLinks" aria-controls="NavbarLinks" aria-expanded="false">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div id="NavbarLinks" class="collapse navbar-collapse">
+				<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+					<li class="nav-item">
+						<a href="#Intro" class="nav-link">Intro</a>
+					</li>
+					<li class="nav-item">
+						<a href="#About" class="nav-link">About</a>
+					</li>
+					<li class="nav-item">
+						<a href="#Portfolio" class="nav-link">Portfolio</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+<!-- Intro -->
+	<section id="Intro">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-7 intro">
+					<h1 class="fw-bolder hello">HELLO MY NAME IS</h1>
+					<br>
+					<h1 class="fw-bolder name">ZONG-XI WEI</h1>
+					<img src="https://i.imgur.com/mFw0CGG.jpg" class="img-fluid photo-middle">
+					<p class="col-md-8 offset-md-2 col-sm-8 offset-sm-2 pt-2 h3">
+						this is my personal portfolio
+					</p>
+					<span class="col-md-8 offset-md-2 col-sm-8 offset-sm-2 scroll-text">
+						Scroll down and read more .......
+					</span>
+					<div class="row position-absolute bottom-0 w-100">
+						<div class="col-md-1 col-sm-1 col-1 offset-1">
+							<a href="https://github.com/maydayXi" target="_blank">
+								<i class="fa-brands fa-github"></i>
+							</a>
+						</div>
+						<div class="col-md-1 col-sm-1 col-1">
+							<a href="https://www.linkedin.com/in/zong-xi-wei-71b688184" target="_blank">
+								<i class="fa-brands fa-linkedin"></i>
+							</a>
+						</div>
+						<div id="Mouse" class="col-md-1 offset-md-7 col-sm-1 offset-sm-3 p-0 text-center mouse">
+							<span>SCROLL</span>
+							<svg class="mouse-icon" viewbox="0 0 32 32">
+								<path d="M16.245,0h-0.49C10.367,0,6,4.367,6,9.755v12.49C6,27.633,10.367,32,15.755,32h0.49 C21.633,32,26,27.633,26,22.245V9.755C26,4.367,21.633,0,16.245,0z M25,22.127c0,4.9-3.972,8.873-8.873,8.873h-0.255 C10.972,31,7,27.028,7,22.127V9.873C7,4.972,10.972,1,15.873,1h0.255C21.028,1,25,4.972,25,9.873V22.127z M16.186,6h-0.373C14.812,6,14,6.812,14,7.814v6.373C14,15.188,14.812,16,15.814,16h0.373 C17.188,16,18,15.188,18,14.186V7.814C18,6.812,17.188,6,16.186,6z M17,14c0,0.552-0.448,1-1,1s-1-0.448-1-1V8c0-0.552,0.448-1,1-1 s1,0.448,1,1V14z"/>
+							</svg>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-5 text-center photo">
+					<img src="https://i.imgur.com/mFw0CGG.jpg" class="ms-auto me-auto">
+				</div>
+			</div>
+		</div>
+	</section>
+
+<!-- About -->
+	<section id="About">
+		<div class="container">
+			<h3 class="text-center fw-bolder page-title">
+				About me
+			</h3>
+			<div class="row">
+				<div class="col-md-6 offset-md-3 text-center pb-4 about">
+					Hi, I'm Zong-Xi, I intrested in UI/UX Design, in 2021, I started UI/UX course in Hahow and decided to do my portfolio website for present my work. 
+				</div>
+			</div>
+			<div class="row g-3">
+				<div class="col-md-3 offset-md-3 col-sm-6 col-6 business-card">
+					<a href="https://maydayxi.github.io/BusinessCard" target="_blank" class="btn fw-bold w-100">
+						Business Card 
+						<i class="fa-solid fa-link"></i>
+					</a>
+				</div>
+				<div class="col-md-3 col-sm-6 col-6 resume">
+					<a href="https://maydayxi.github.io/MyResume" target="_blank" class="btn fw-bold w-100">
+						Resume 
+						<i class="fa-solid fa-link"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+<!-- Portfolio -->
+	<section id="Portfolio">
+		<div class="container">
+			<h3 class="text-center fw-bolder page-title">
+				Portfolio
+			</h3>
+			<div class="portfolio">
+				<ul id="PortfolioTab" class="nav nav-pills mb-3 d-flex justify-content-center" role="tablist">
+					<li class="nav-item" role="presentation">
+						<button id="WebTab" class="nav-link active" type="button" role="tab" data-bs-toggle="pill" data-bs-target="#WebPanel" aria-control="WebPanel" aria-selected="true">
+							WEB
+						</button>
+					</li>
+					<li class="nav-item" role="presentation">
+						<button id="AndroidTab" class="nav-link" type="button" role="tab" data-bs-toggle="pill" data-bs-target="#AndroidPanel" aria-control="AndroidPanel" aria-selected="false">
+							ANDROID
+						</button>
+					</li>
+					<li class="nav-item" role="presentation">
+						<button id="OthersTab" class="nav-link" type="button" role="tab" data-bs-toggle="pill" data-bs-target="#OthersPanel" aria-control="OthersPanel" aria-selected="false">
+							OTHERS
+						</button>
+					</li>
+				</ul>
+				<div id="PortfolioContent" class="tab-content">
+					<div id="WebPanel" class="tab-pane fade show active" role="tabpanel" aria-labelledby="WebTab">
+						<div class="row g-3">
+							<div class="col-md-4 col-sm-6 col-6 work">
+								<img src="https://i.imgur.com/SH4komV.png" alt="WeatherBox-UI" class="img-fluid">
+								<a href="https://maydayxi.github.io/Weather-Box-UI" target="_blank">
+									<h4 class="title">Weather Box UI</h4>
+									<i class="fa-solid fa-arrow-right-long"></i>
+								</a>
+							</div>
+							<div class="col-md-4 col-sm-6 col-6 work">
+								<img src="https://i.imgur.com/hZH3Lzq.png?1" alt="Ukraine-Intro" class="img-fluid">
+								<a href="https://maydayxi.github.io/Intro-Ukraine/" target="_blank">
+									<h4 class="title">Ukraine Intro</h4>
+									<i class="fa-solid fa-arrow-right-long"></i>
+								</a>
+							</div>
+							<div class="col-md-4 col-sm-6 col-6 work">
+								<img src="https://i.imgur.com/qny9l8g.png" alt="Shopping Cart UI" class="img-fluid">
+								<a href="https://maydayxi.github.io/Shopping-Cart-UI/" target="_blank">
+									<h4 class="title">Shopping Cart UI</h4>
+									<i class="fa-solid fa-arrow-right-long"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div id="AndroidPanel" class="tab-pane fade" role="tabpanel" aria-labelledby="AndroidTab">
+						<div class="row g-3">
+							<div class="col-md-4 work">
+								<img src="https://i.imgur.com/qD8by0l.png?1" alt="4Digits">
+								<a href="">
+									<h4 class="title">4 Digits</h4>
+									<i class="fa-solid fa-arrow-right-long"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div id="OthersPanel" class="tab-pane fade" role="tabpanel" aria-labelledby="OthersTab">
+						<div class="row g-3">
+							<div class="col-md-6 offset-md-3">
+								<h3 class="text-center">
+									Comming Soon........
+								</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+<!-- Thanks -->
+	<section id="Thanks">
+		<div class="container">
+			<h1 class="w-50 me-auto ms-auto">
+				<p>Thanks</p>
+				<p class="text-center">for</p>
+				<p>watching</p>
+			</h1>
+		</div>
+	</section>
+
+<!-- Footer -->
+	<footer>
+		<div class="container">
+			<div class="row p-3">
+				<div class="col-md-6 col-sm-8 col-8 fw-bolder">
+					2022 Desined by Zong-Xi Wei
+				</div>
+				<div class="col-md-6 col-sm-4 col-4">
+					<div class="row social">
+						<div class="col-md-1 offset-md-8 col-sm-3 col-3">
+							<a href="https://github.com/maydayXi" target="_blank">
+								<i class="fa-brands fa-github"></i>
+							</a>
+						</div>
+						<div class="col-md-1 col-sm-3 col-3">
+							<a href="https://www.linkedin.com/in/zong-xi-wei-71b688184" target="_blank">
+								<i class="fa-brands fa-linkedin"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+<!-- Script -->
+	<!-- jQuery -->
+	<script src="js/jQuery/3.6.0/jquery-3.6.0.min.js"></script>
+	<!-- Bootstarp -->
+	<script type="text/javascript" src="js/Bootstrap/5.1.3/bootstrap.min.js"></script>
+	<!-- index -->
+	<script type="text/javascript" src="js/index.js"></script>
+
+</body>
+</html>
